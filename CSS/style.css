@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(23, 23, 23);
+}
+h5 {
+    position: relative;
+}
+
+h5::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -50%);
+    background-color: brown;
+}
+
+h5 {
+    color: brown;
+}
+
+button {
+    border: none;
+    background-color: brown;
+    color: rgb(235, 209, 60);
+    padding: 5px 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+h2 {
+    color: rgb(235, 209, 60);
+}
+
+img {
+    width: 100%;
+    height: 400px;
+} 
+
+/* Small Screen */
+@media screen and (max-width: 767px) {
+    img {
+        width: 80%;
+        height: 50%;
+    }
+
+}
